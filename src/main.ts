@@ -61,7 +61,21 @@ document.querySelectorAll<HTMLButtonElement>('.languageButtons button').forEach(
     const target = event.target as HTMLButtonElement;
     const selectedLanguage = target.getAttribute('data-lang');
     if (selectedLanguage) {
-      i18next.changeLanguage(selectedLanguage, updateContent);
+      i18next.changeLanguage(selectedLanguage, updateContent).then(() => {
+        if (selectedLanguage === 'ar') {
+          document.querySelector<HTMLDivElement>('.modal')!.style.direction = 'rtl';
+
+          const input = document.getElementById('msisdn') as HTMLInputElement;
+          input.style.direction = 'rtl';
+          input.style.margin = '0 10px 0 0';
+        } else {
+          document.querySelector<HTMLDivElement>('.modal')!.style.direction = 'ltr';
+
+          const input = document.getElementById('msisdn') as HTMLInputElement;
+          input.style.direction = 'ltr';
+          input.style.margin = '0 0 0 10px';
+        }
+      });
     }
   });
 });
