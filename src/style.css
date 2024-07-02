@@ -79,7 +79,7 @@ body {
       overflow: hidden;
       position: relative;
 
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         height: 600px;
       }
 
