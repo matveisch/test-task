@@ -24,12 +24,18 @@ document.querySelector<HTMLDivElement>('.modal')!.innerHTML = `
 `;
 
 const button = document.querySelector('.playButton') as HTMLButtonElement;
+const playImage = document.querySelector('.playImage') as HTMLImageElement;
 const modal = document.querySelector('.modal') as HTMLDivElement;
 
 function toggleModal() {
   if (!modal.classList.contains('open')) {
+    playImage.src = '/loader.svg';
+    playImage.classList.add('loader');
+
     setTimeout(() => {
       modal.classList.toggle('open');
+      playImage.src = '/circle-play.svg';
+      playImage.classList.remove('loader');
     }, 2000);
   }
 }
