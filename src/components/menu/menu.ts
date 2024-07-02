@@ -9,13 +9,13 @@ document.querySelector<HTMLDivElement>('.menu')!.innerHTML = `
   
   <ul>
     <li>
-        <a href="http://google.com">Google</a>
+        <a href="http://google.com" data-translate="google">Google</a>
     </li>
     <li>
-        <a href="http://duckduckgo.com">DuckDuckGo</a>
+        <a href="http://duckduckgo.com" data-translate="duckduckgo">DuckDuckGo</a>
     </li>
     <li>
-        <a href="http://facebook.com">Facebook</a>
+        <a href="http://facebook.com" data-translate="facebook">Facebook</a>
     </li>
   </ul>
 `;

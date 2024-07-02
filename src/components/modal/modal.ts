@@ -2,25 +2,24 @@ import './modal.css';
 
 document.querySelector<HTMLDivElement>('.modal')!.innerHTML = `
   <div>
-    <h1>Unlock video</h1>
-    <p>Enter your telephone number – you'll receive a PIN</p>
+    <h1 data-translate="unlockVideo">Unlock video</h1>
+    <p data-translate="enterPhoneNumber">Enter your telephone number – you'll receive a PIN</p>
     
     <form id="phoneForm">
       <div class="inputContainer">
           <div class="countryCode">+971</div>
           <input type="tel" id="msisdn" maxlength="9" placeholder="_ _ _ _ _ _ _ _ _ _">
       </div>
-      <div class="errorMessage" id="errorMessage">Please enter a valid 9-digit phone number.</div>
+      <div class="errorMessage" id="errorMessage" data-translate="errorMessage">Please enter a valid 9-digit phone number.</div>
       
       <button type="submit">
-          <span>continue</span>
+          <span data-translate="continue">continue</span>
           <br>
-          <span>to subscribe with pin</span>   
+          <span data-translate="subscribeWithPin">to subscribe with pin</span>   
       </button>
     </form>
     
-    
-    <p>price</p>
+    <p data-translate="price">price</p>
   </div>
 `;
 
