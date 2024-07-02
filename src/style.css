@@ -77,10 +77,6 @@ body {
         height: 600px;
       }
 
-      .open {
-        display: block;
-      }
-
       img {
         position: absolute;
         z-index: 1;
