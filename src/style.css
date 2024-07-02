@@ -40,8 +40,7 @@ body {
 
   main {
     padding: 0 10px;
-    margin-top: 20px;
-    max-width: 1000px;
+    max-width: calc(1000px - 20px);
 
     .functionalHeader {
       display: flex;
@@ -49,6 +48,7 @@ body {
       align-items: stretch;
       position: relative;
       width: 100%;
+      margin-bottom: 20px;
 
       .burgerContainer {
         img {
@@ -80,6 +80,10 @@ body {
       display: flex;
       overflow: hidden;
       position: relative;
+
+      @media (max-width: 425px) {
+        height: 600px;
+      }
 
       img {
         position: absolute;
