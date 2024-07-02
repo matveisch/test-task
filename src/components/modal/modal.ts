@@ -30,6 +30,12 @@ const modal = document.querySelector('.modal') as HTMLDivElement;
 function toggleModal() {
   if (!modal.classList.contains('open')) {
     modal.classList.toggle('open');
+    modal.style.display = 'block';
+  } else {
+    modal.classList.toggle('open');
+    setTimeout(() => {
+      modal.style.display = 'none';
+    }, 300);
   }
 }
 
@@ -57,6 +63,5 @@ form.addEventListener('submit', (e: Event) => {
   } else {
     errorMessage.style.display = 'none';
     alert('Form submitted successfully!');
-    // Perform form submission logic here
   }
 });

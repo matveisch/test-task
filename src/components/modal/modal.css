@@ -6,7 +6,11 @@
   border: 1px solid #000;
   width: calc(100% - 22px);
   padding: 10px;
-  display: none;
+  top: -100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: top 0.3s ease-in-out;
 
   .inputContainer {
     display: flex;
@@ -75,5 +79,5 @@
 }
 
 .open {
-  display: block;
+  top: 0;
 }
