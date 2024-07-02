@@ -29,13 +29,9 @@ const modal = document.querySelector('.modal') as HTMLDivElement;
 
 function toggleModal() {
   if (!modal.classList.contains('open')) {
-    modal.classList.toggle('open');
-    modal.style.display = 'block';
-  } else {
-    modal.classList.toggle('open');
     setTimeout(() => {
-      modal.style.display = 'none';
-    }, 300);
+      modal.classList.toggle('open');
+    }, 2000);
   }
 }
 
