@@ -26,6 +26,7 @@
       font-size: 18px;
       margin-left: 10px;
       width: 200px;
+      padding-top: 2px;
 
       &::placeholder {
         color: #000;
@@ -37,7 +38,6 @@
       align-items: center;
       gap: 5px;
       font-size: 18px;
-      line-height: 2px;
 
       &::before {
         content: '';
