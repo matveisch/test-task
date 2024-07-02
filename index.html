@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/style.css">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test task</title>
@@ -13,7 +14,7 @@
 
     <main>
       <div class="functionalHeader">
-        <button class="burgerContainer">
+        <button class="burgerButton">
           <img src="/align-justify.svg" alt="burger-menu-icon" />
         </button>
 
@@ -27,7 +28,9 @@
       </div>
 
       <div class="videoContainer">
-        <button>
+        <div class="modal"></div>
+
+        <button class="playButton">
           <img src="/circle-play.svg" alt="play-button" />
         </button>
         <video controls poster="/thumbnail.png">
@@ -37,5 +40,7 @@
     </main>
 
     <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/components/modal/modal.ts"></script>
+    <script type="module" src="/src/components/input/input.ts"></script>
   </body>
 </html>

@@ -1,0 +1,36 @@
+.inputContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 5px 10px;
+  width: fit-content;
+
+  input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-left: 10px;
+    width: 200px;
+
+    &::placeholder {
+      color: #000;
+    }
+  }
+
+  .country-code {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      background-color: #d3d3d3;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}
