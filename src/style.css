@@ -126,3 +126,7 @@ button {
   background-color: transparent;
   border: none;
 }
+
+input {
+  all: unset;
+}
