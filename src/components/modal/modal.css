@@ -6,4 +6,5 @@
   border: 1px solid #000;
   width: calc(100% - 22px);
   padding: 10px;
+  display: none;
 }

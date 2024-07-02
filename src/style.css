@@ -86,7 +86,7 @@ body {
       }
 
       .open {
-        display: none;
+        display: block;
       }
 
       img {
