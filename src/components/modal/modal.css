@@ -28,10 +28,11 @@
       }
     }
 
-    .country-code {
+    .countryCode {
       display: flex;
       align-items: center;
       font-size: 18px;
+      line-height: 2px;
 
       &::before {
         content: '';
@@ -43,6 +44,12 @@
         margin-right: 5px;
       }
     }
+  }
+
+  .errorMessage {
+    color: red;
+    font-size: 14px;
+    display: none;
   }
 
   button {
