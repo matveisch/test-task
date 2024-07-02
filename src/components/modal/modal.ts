@@ -24,6 +24,19 @@ document.querySelector<HTMLDivElement>('.modal')!.innerHTML = `
   </div>
 `;
 
+const button = document.querySelector('.playButton') as HTMLButtonElement;
+const modal = document.querySelector('.modal') as HTMLDivElement;
+
+function toggleModal() {
+  if (!modal.classList.contains('open')) {
+    modal.classList.toggle('open');
+  }
+}
+
+button.addEventListener('click', () => {
+  toggleModal();
+});
+
 const msisdnInput = document.getElementById('msisdn') as HTMLInputElement;
 const form = document.getElementById('phoneForm') as HTMLFormElement;
 const errorMessage = document.getElementById('errorMessage') as HTMLDivElement;
