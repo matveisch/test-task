@@ -14,7 +14,8 @@
 
   .inputContainer {
     display: flex;
-    align-items: center;
+    gap: 5px;
+    align-items: flex-end;
     border: 1px solid #000;
     border-radius: 8px;
     padding: 15px 10px;
@@ -24,9 +25,15 @@
       border: none;
       outline: none;
       font-size: 18px;
-      margin-left: 10px;
       width: 200px;
-      padding-top: 2px;
+
+      padding-block: 0;
+      padding-inline: 0;
+      height: 27px;
+      line-height: 0;
+
+      display: flex;
+      align-items: center;
 
       &::placeholder {
         color: #000;
@@ -38,6 +45,7 @@
       align-items: center;
       gap: 5px;
       font-size: 18px;
+      padding-bottom: 1px;
 
       &::before {
         content: '';

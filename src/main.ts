@@ -37,8 +37,8 @@ const resources = {
 
 i18next.init(
   {
-    lng: 'en', // Default language
-    debug: true,
+    lng: 'en',
+    debug: false,
     resources,
   },
   function (err) {
@@ -67,13 +67,11 @@ document.querySelectorAll<HTMLButtonElement>('.languageButtons button').forEach(
 
           const input = document.getElementById('msisdn') as HTMLInputElement;
           input.style.direction = 'rtl';
-          input.style.margin = '0 10px 0 0';
         } else {
           document.querySelector<HTMLDivElement>('.modal')!.style.direction = 'ltr';
 
           const input = document.getElementById('msisdn') as HTMLInputElement;
           input.style.direction = 'ltr';
-          input.style.margin = '0 0 0 10px';
         }
       });
     }
