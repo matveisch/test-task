@@ -12,8 +12,8 @@
 }
 
 body {
-  margin: 0;
   min-height: 100vh;
+  margin: 0;
 
   display: flex;
   flex-direction: column;
@@ -32,6 +32,7 @@ body {
   main {
     padding: 0 10px;
     max-width: calc(1000px - 20px);
+    flex: 1;
 
     .functionalHeader {
       display: flex;
@@ -97,6 +98,10 @@ body {
         filter: blur(15px);
       }
     }
+  }
+
+  footer {
+    padding: 10px;
   }
 }
 
