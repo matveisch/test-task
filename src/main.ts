@@ -1,6 +1,12 @@
-const button = document.querySelector<HTMLButtonElement>('.playButton');
-const modal = document.querySelector<HTMLDivElement>('.modal');
+const button = document.querySelector('.playButton') as HTMLButtonElement;
+const modal = document.querySelector('.modal') as HTMLDivElement;
 
-button!.addEventListener('click', () => {
-  modal!.classList.toggle('open');
+function toggleModal() {
+  if (!modal.classList.contains('open')) {
+    modal.classList.toggle('open');
+  }
+}
+
+button.addEventListener('click', () => {
+  toggleModal();
 });
